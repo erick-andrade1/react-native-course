@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 
 import { Header } from './src/components/main/Header';
-import { PeopleList } from './src/components/generalList/PeopleList';
+import { PeopleList } from './src/components/lists/generalList/PeopleList';
 
 import Axios from 'axios';
 
@@ -25,17 +25,10 @@ export default function App() {
   }, []);
 
   return (
-    <View style={styles.container}>
+    <View>
       <Header label='Pessoas!' />
       <PeopleList people={people} />
       <StatusBar />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-});
