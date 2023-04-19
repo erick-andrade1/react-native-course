@@ -1,5 +1,4 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native';
-import { capitalizeFirstLetter } from '../../../utils';
 
 import { ItemStyle } from './itemStyle';
 
